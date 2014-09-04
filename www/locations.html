@@ -1,0 +1,50 @@
+
+    <!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">  
+    <div class="navbar-alt"></div>  
+   <div class="left"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars-white"></i></a>
+      <a href="index.html" class="back link" style="color:white"><i class="icon icon-back-white"></i><span>Back</span></a>
+    </div>
+    <div class="right inside-pages">Stores</div>
+  </div>
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="locations" class="page no-toolbar">
+    <!-- Scrollable page content-->
+    <div class="page-content" style="padding-top:40px">
+   <div id="store-locator-container">
+      <div id="page-header">
+        <h1>Find a Store Near You</h1>
+        <p>We use location services to find a location near you. If you do not wish to allow this please use the box below to search for a location.</p>
+      </div>
+      <div id="form-container">
+        <form id="user-location" method="post" action="#">
+            <div id="form-input">
+              <label for="address">Enter Address or Zip Code:</label>
+              <input type="text" id="address" name="address" />
+             </div>
+            
+            <button id="" class="button button-round" type="submit">Find A Store</button>
+        </form>
+      </div>
+<div class="loading-map"></div> 
+      <div id="map-container">
+          
+          <div id="map">
+          <div class="loading-map"></div></div>
+        <div id="loc-list">
+            <ul id="list"></ul>
+        </div>
+     
+      </div>
+    </div>
+        
+        
+    </div>
+     
+      </div>
+  </div>
+  </body>
+</html>

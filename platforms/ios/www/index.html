@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Hometown Market</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.css">
+    <link rel="stylesheet" href="css/framework7.themes.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" type="text/css" href="css/map.css" /> 
+    <link rel="stylesheet" href="css/my-app.css">
+    
+      <!-- Start Icon Loads -->
+    <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
+      <link rel="icon" sizes="152x152" href="/img/icons/icon.png">
+      <!-- Standard Favicon -->
+    <link rel="/img/icon/apple-touch-icon" href="apple-touch-icon-iphone.png" />
+      <!-- iOS 7 iPad ( retina) -->
+    <link href="/img/icons/icon-152.png" sizes="152x152" rel="apple-touch-icon">
+    <!-- iOS 6 iPad (retina) -->
+    <link href="/img/icons/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+    <!-- iOS 7 iPhone (retina) -->
+    <link href="/img/icons/icon-120.png" sizes="120x120" rel="apple-touch-icon">
+    <!-- iOS 6 iPhone (retina) -->
+    <link href="/img/icons/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+    <!-- iOS 7 iPad -->
+    <link href="/img/icons/icon-76.png" sizes="76x76" rel="apple-touch-icon">
+    <!-- iOS 6 iPad -->
+    <link href="/img/icons/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+    <!-- iOS 6 iPhone -->
+    <link href="/img/icons/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+      <!-- Splash Screen -->
+      <!-- iPhone 5/5s --->
+      <link href="/img/splash/a_640x1096.jpg"
+      media="(device-width: 320px) and (device-height: 568px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPhone, retina -->
+<link href="/img/splash/b_640x921@2x.jpg"
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPhone -->
+<link href="/img/splash/c_640x960@2x.jpg" rel="apple-touch-startup-image">
+      <link href="/img/splash/a_320x461.jpg"
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image">
+      
+      
+      
+      
+      <link rel="apple-touch-startup-image" href="/img/splash/a_640x1096.jpg" />
+      <!-- Font Library THIS IS BEING USED FOR TESTING -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
+    
+   
+    <link rel="stylesheet" type="text/css" href="css/jquery/jquery-ui.min.css" /> 
+    
+      </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div data-theme="white" class="panel panel-left panel-reveal">
+      <div class="list-block">
+        <ul>
+             <li><a href="index.html" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-media"><img class="nav-icon" src="./img/icons/home-nav.png"/></div>
+                <div class="item-inner">
+                  <div class="item-title ">HOME</div>
+                </div>
+              </div></a></li>
+          <li><a href="list-view.html" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-media"><img class="nav-icon" src="./img/icons/weeklyCirc-nav.png"/></div>
+                <div class="item-inner">
+                  <div class="item-title ">WEEKLY ADS</div>
+                </div>
+              </div></a></li>
+          <li><a href="#" class="view-coupons close-panel item-link" style="color:inherit">
+              <div class="item-content">
+                <div class="item-media"><img class="nav-icon" src="./img/icons/coupon-nav.png"/></div>
+                <div class="item-inner">
+                  <div class="item-title">COUPONS</div>
+                </div>
+              </div></a></li>
+          <li><a href="shoppinglist.html" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-media"><img class="nav-icon" src="./img/icons/shoppinglist-nav.png"/></div>
+                <div class="item-inner">
+                  <div class="item-title">SHOPPING LIST</div>
+                </div>
+              </div></a></li> 
+            
+            <li><a href="recipes.html" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-media"><img class="nav-icon" src="./img/icons/recipes-nav.png"/></div>
+                <div class="item-inner">
+                  <div class="item-title">RECIPES</div>
+                </div>
+              </div></a></li> 
+            
+              <li><a href="rewards.html" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-media"><img class="nav-icon" src="./img/icons/rewards-nav.png"/></div>
+                <div class="item-inner">
+                  <div class="item-title">REWARDS</div>
+                </div>
+              </div></a></li> 
+              
+          <li><a href="locations.html" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-media"><img class="nav-icon" src="./img/icons/mapHome-nav.png"/></div>
+                <div class="item-inner">
+                  <div class="item-title">STORES</div>
+                </div>
+              </div></a></li>
+          <li><a href="contact.html" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-media"><img class="nav-icon" src="./img/icons/phone-nav.png"/></div>
+                <div class="item-inner">
+                  <div class="item-title">CONTACT US</div>
+                </div>
+              </div></a></li>
+             <li><a href="about.html" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-media"><img class="nav-icon" src="./img/icons/about-nav.png"/></div>
+                <div class="item-inner">
+                  <div class="item-title">ABOUT</div>
+                </div>
+              </div></a></li>
+              <li><a href="faq.html" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-media"><img class="nav-icon" src="./img/icons/faq-nav.png"/></div>
+                <div class="item-inner">
+                  <div class="item-title">FAQ'S</div>
+                </div>
+              </div></a></li>
+       </ul>
+      </div>
+      <div class="content-block">
+        <!-- Contact After Navigation In Side Bar-->
+        <div align="center" class="item-title">Powered By:<br />
+          <img src="./img/FisherDigital_Logo.png" style="width: 50%; height: auto;" />
+        </div>        
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+         
+       <div class="navbar navbar-front">
+           <div class="navbar-blur"></div>
+          <div class="navbar-inner">
+           
+              <div class="left">
+              <a href="#" class="link icon-only open-panel"><i class="icon icon-bars-white"></i></a>
+                  <a href="#" class="link"><img src="./img/hometownmkt-logo2.png" style="width:30%"></a>
+            </div>
+            <div class="center sliding"></div>
+                  </div>
+        </div>
+              
+        <!--  START PAGE/CONTENT DECLARATIONS -->
+        <div class="pages  navbar-through ">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page navbar-fixed  ">
+            <!-- Scrollable page content-->
+            <div class="page-content front-page " style="padding-top:0px">
+               <!-- Full BG Slider for Home Page --> 
+               <div class="front-slider-container">
+                   <div data-page="slider-custom" class="front-slider">
+   
+      <div class="ks-slider-custom">
+        <div data-pagination=".slider-pagination" data-spaceBetween="0" data-autoplayDisableOnInteraction='false' data-autoplay="5000" data-nextButton=".slider-next-button" data-prevButton=".slider-prev-button"  data-indexButton=".slider-pagination-bullet" data-paginationHide="hide" class="slider-container slider-init">
+          <!--<div class="slider-pagination"></div>-->
+          <div class="slider-wrapper">
+           
+            <div style="background-image:url(./img/shopper.jpg?2)" class="slider-slide">
+              <a href="circular.html" class="item-link">
+              <div class="slider-text glass">Stop In Today!</div>
+              <div class="slider-sub-text blue-glass">Tap to view this weeks ad.</div>
+              </a>
+            </div>
+            <div style="background-image:url(./img/steak.jpg?3)" class="slider-slide">
+              <a href="circular.html" class="item-link">
+              <div class="slider-text glass">Check Out These Sizzling Deals!</div>
+              <div class="slider-sub-text blue-glass">Tap to view this weeks ad.</div>
+              </a>
+            </div>
+            <div style="background-image:url(./img/shoppingCart.jpg?4)" class="slider-slide">
+              <a href="shoppinglist.html" class="item-link">
+              <div class="slider-text glass">Create Your Shopping List</div>
+              <div class="slider-sub-text blue-glass">Tap to get started.</div>
+              </a>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+               
+            <!-- Homepage Lower Content -->  
+              <div class="row homepage-row">
+                  <div class="mainicon-bg"></div>
+            <div class="col-33"><a href="weeklyAd.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner front-inner">
+                           <img class="main-icon" src="./img/icons/weeklyCirc.png"/>
+                          <div class="item-title">WEEKLY ADS</div>
+                        </div>
+                      </div></a></div>
+            <div class="col-33"><a href="#" class="item-link view-coupons ">
+                      <div class="item-content">
+                        <div class="item-inner front-inner">
+                           <img class="main-icon" src="./img/icons/coupon.png"/>
+                          <div class="item-title">COUPONS</div>
+                        </div>
+                      </div></a></div>
+            <div class="col-33"><a href="shoppinglist.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner front-inner">
+                          <img class="main-icon" src="./img/icons/shoppinglist.png"/>
+                          <div class="item-title">LISTS</div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-33"><a href="locations.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner front-inner">
+                          <img class="main-icon" src="./img/icons/mapHome.png"/>
+                          <div class="item-title">STORES</div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-33"><a href="recipes.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner front-inner">
+                          <img class="main-icon" src="./img/icons/recipes.png"/>
+                          <div class="item-title">RECIPES</div>
+                        </div>
+                      </div></a></div>
+                  <div class="col-33"><a href="rewards.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner front-inner">
+                          <img class="main-icon" src="./img/icons/rewards.png"/>
+                          <div class="item-title">REWARDS</div>
+                        </div>
+                      </div></a></div>        
+          </div>
+         </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar Container-->
+      </div>
+        <!-- END OF CONTENT -->
+        <!-- Path to Framework7 Library and all other JS Libraries-->
+         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/framework7.min.js"></script>
+        <!-- Google Maps API -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy1gpnhD11HfQ546DA2o-09kYoW34p6wg"></script>
+        <!-- Backup for Google Map API
+               <script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
+        
+        
+        <!-- Path to your app js-->
+        <script type="text/javascript" src="js/my-app.js"></script>
+        <!-- Store Locator Script -->
+        <script src="js/jquery.storelocator.js"></script>
+            
+        
+        <!-- AutoComplete for shopping list -->
+        <script src="js/jquery/jquery-ui.js"></script>
+        
+	
+        
+    </div><!-- eof views -->
+    </body>
+</html>
